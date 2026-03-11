@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GasCrisis.net - Anaesthesia Crisis Manual</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top-bar">
+        <header class="app-header">
+            <h1>gas<span>crisis.net</span></h1>
+        </header>
+        <div class="search-container">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            <input type="text" id="crisis-search" placeholder="Search">
+        </div>
+    </div>
+
+    <main class="grid-container">
+        <!-- Tile 1: A/B -->
+        <div class="tile tile-ab" tabindex="0">
+            <div class="tile-content">
+                <h2>Airway / Breathing</h2>
+                <ul class="crisis-list">
+                    <li><a href="crisis.html?id=ab-difficult-airway">Unanticipated DIFFICULT AIRWAY</a></li>
+                    <li><a href="crisis.html?id=ab-aspiration">ASPIRATION</a></li>
+                    <li><a href="crisis.html?id=ab-bronchospasm">BRONCHOSPASM</a></li>
+                    <li><a href="crisis.html?id=ab-co2-trace">abnormal / absent CO2 TRACE</a></li>
+                    <li><a href="crisis.html?id=ab-capnothorax">CAPNOTHORAX</a></li>
+                    <li><a href="crisis.html?id=ab-pneumothorax">PNEUMOTHORAX</a></li>
+                    <li><a href="crisis.html?id=ab-fire">FIRE - airway</a></li>
+                    <li><a href="crisis.html?id=ab-hypoxia">HYPOXIA - undifferentiated</a></li>
+                    <li><a href="crisis.html?id=ab-stridor">Post-extubation STRIDOR</a></li>
+                </ul>
+            </div>
+            <div class="tile-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Handle -->
+                    <rect x="10" y="10" width="3.5" height="12" rx="0.5" />
+                    <!-- Neck -->
+                    <rect x="10.5" y="8" width="2.5" height="2" />
+                    <!-- Blade Block -->
+                    <rect x="10" y="6" width="3.5" height="2" />
+                    <!-- Sweeping Blade -->
+                    <path d="M 10 6 C 15 3.5 19 4.5 23 9 C 22.5 9 22 8.5 21.5 8 C 17 5 14.5 5.5 13.5 6" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Tile 2: C -->
+        <div class="tile tile-c" tabindex="0">
+            <div class="tile-content">
+                <h2>Circulation</h2>
+                <ul class="crisis-list">
+                    <li><a href="crisis.html?id=c-aicd">AICD malfunction / interference</a></li>
+                    <li><a href="crisis.html?id=c-anaphylaxis">ANAPHYLAXIS</a></li>
+                    <li><a href="crisis.html?id=c-cardiac-arrest">Adult CARDIAC ARREST</a></li>
+                    <li><a href="crisis.html?id=c-cals">CALS</a></li>
+                    <li><a href="crisis.html?id=c-bradycardia">BRADYCARDIA</a></li>
+                    <li><a href="crisis.html?id=c-vasospasm">CORONARY VASOSPASM</a></li>
+                    <li><a href="crisis.html?id=c-embolism">Air / Gas EMBOLISM</a></li>
+                    <li><a href="crisis.html?id=c-haemorrhage">Massive HAEMORRHAGE</a></li>
+                    <li><a href="crisis.html?id=c-ischaemia">Intra-op MYOCARDIAL ISCHAEMIA</a></li>
+                    <li><a href="crisis.html?id=c-transfusion">Haemolytic TRANSFUSION REACTION</a></li>
+                    <li><a href="crisis.html?id=c-hypertension">Undifferentiated HYPERTENSION</a></li>
+                    <li><a href="crisis.html?id=c-tachy-broad">TACHYCARDIA – BROAD complex</a></li>
+                    <li><a href="crisis.html?id=c-tachy-narrow">TACHYCARDIA – NARROW complex</a></li>
+                </ul>
+            </div>
+            <div class="tile-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Echo Probe Body -->
+                    <path d="M 11.5 1 C 11.5 3 11 4 11 5 L 10 9 C 8 10.5 8 13.5 9.2 15 L 9.5 17.5 C 8.5 18.5 8.5 19.5 9.5 20.5 L 14.5 20.5 C 15.5 19.5 15.5 18.5 14.5 17.5 L 14.8 15 C 16 13.5 16 10.5 14 9 L 13 5 C 13 4 12.5 3 12.5 1 Z" />
+                    <!-- Transducer Lens Face -->
+                    <path d="M 9.5 20.5 L 10.3 22 L 13.7 22 L 14.5 20.5 Z" fill="currentColor" stroke="none" />
+                    <!-- Neck Line -->
+                    <path d="M 10 9 L 14 9" />
+                    <!-- Logo Circle -->
+                    <circle cx="12" cy="12.5" r="1.5" />
+                    <!-- Small Orientation Marker -->
+                    <path d="M 14.6 16.5 L 15.3 16.5 L 15.3 17.5 L 14.5 17.5" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Tile 3: D -->
+        <div class="tile tile-d" tabindex="0">
+            <div class="tile-content">
+                <h2>Disability</h2>
+                <ul class="crisis-list">
+                    <li><a href="crisis.html?id=d-aneurysm">Aneurysm RUPTURE (OT / IR)</a></li>
+                    <li><a href="crisis.html?id=d-autonomic">AUTONOMIC DYSREFLEXIA</a></li>
+                    <li><a href="crisis.html?id=d-vasospasm">Cerebral VASOSPASM</a></li>
+                    <li><a href="crisis.html?id=d-emergence">Delayed EMERGENCE</a></li>
+                    <li><a href="crisis.html?id=d-stroke">STROKE</a></li>
+                    <li><a href="crisis.html?id=d-spinal">HIGH / TOTAL SPINAL</a></li>
+                    <li><a href="crisis.html?id=d-icp">Increased INTRACRANIAL PRESSURE</a></li>
+                    <li><a href="crisis.html?id=d-evoked">Loss of EVOKED POTENTIALS</a></li>
+                    <li><a href="crisis.html?id=d-polyuria">POLYURIA in NEUROSURGERY</a></li>
+                    <li><a href="crisis.html?id=d-seizure">SEIZURE during craniotomy</a></li>
+                </ul>
+            </div>
+            <div class="tile-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                        d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9zm-6 13a1.99 1.99 0 0 0 2-2H10a2 2 0 0 0 2 2z" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Tile 4: E -->
+        <div class="tile tile-e" tabindex="0">
+            <div class="tile-content">
+                <h2>Extras</h2>
+                <ul class="crisis-list">
+                    <li><a href="crisis.html?id=e-last">LAST</a></li>
+                    <li><a href="crisis.html?id=e-mh">MALIGNANT HYPERTHERMIA</a></li>
+                    <li><a href="crisis.html?id=e-hyperkalaemia">HYPERKALAEMIA</a></li>
+                    <li><a href="crisis.html?id=e-hyponatraemia">HYPONATRAEMIA (TURP / hysteroscopy)</a></li>
+                    <li><a href="crisis.html?id=e-fire">FIRE in THEATRE</a></li>
+                    <li><a href="crisis.html?id=e-serotonin">SEROTONIN SYNDROME</a></li>
+                    <li><a href="crisis.html?id=e-thyroid">THYROID STORM</a></li>
+                </ul>
+            </div>
+            <div class="tile-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Tile 5: O/P -->
+        <div class="tile tile-op" tabindex="0">
+            <div class="tile-content">
+                <h2>Obstetrics / Paeds</h2>
+                <ul class="crisis-list">
+                    <li><a href="crisis.html?id=o-eclampsia">ECLAMPSIA / maternal SEIZURE</a></li>
+                    <li><a href="crisis.html?id=o-arrest">Maternal COLLAPSE / ARREST</a></li>
+                    <li><a href="crisis.html?id=o-pph">PRIMARY POST PARTUM HAEMORRHAGE</a></li>
+                    <li><a href="crisis.html?id=p-arrest">Paediatric CARDIAC ARREST</a></li>
+                    <li><a href="crisis.html?id=p-neonatal">NEONATAL Advanced Life Support</a></li>
+                    <li><a href="crisis.html?id=p-tet">TET spell</a></li>
+                </ul>
+            </div>
+            <div class="tile-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+            </div>
+        </div>
+        <!-- Tile 6: Blank -->
+        <div class="tile tile-blank" tabindex="0">
+            <div class="tile-content">
+                <h2>RESOURCES</h2>
+                <ul class="crisis-list">
+                    <li><a href="crisis.html?id=r-formulary">Drug Formulary</a></li>
+                    <li><a href="crisis.html?id=r-rsi">RSI checklist</a></li>
+                    <li><a href="crisis.html?id=r-vha">VHA guidance - TEG/ROTEM</a></li>
+                    <li><a href="crisis.html?id=r-about">About</a></li>
+                    <li><a href="crisis.html?id=r-credited">Credited Resources</a></li>
+                </ul>
+            </div>
+            <div class="tile-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>Your feedback valued: <br><br> <a href="mailto:gascrisis@proton.me"><span>gascrisis@proton.me</span></a></p>
+    </footer>
+
+    <!-- Disclaimer Gate Modal -->
+    <div id="disclaimer-modal" class="modal disclaimer-overlay">
+        <div class="modal-content disclaimer-content">
+            <h2 id="disclaimer-title">Disclaimer</h2>
+            <div id="disclaimer-body">
+                <p>Welcome to <strong>GasCrisis.net</strong>.</p>
+                <p>This website is intended for use by anaesthesia and critical care physicians.</p>
+                <p><strong>Important:</strong> The information provided here is for educational purposes
+                    only and does NOT substitute for institutional guideline/policies or context dependent clinical decision making.</p>
+                <p>By entering this site, you acknowledge these terms.</p>
+            </div>
+            <button id="agree-btn" class="primary-btn">I Agree - Enter Site</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

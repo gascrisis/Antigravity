@@ -1,0 +1,9 @@
+# Styling Updates
+- [x] Assign anesthetic gas colors to tiles:
+  - Header text: Nitrous Oxide (Blue)
+  - Tile A (Airway): Methoxyflurane (Green)
+  - Tile C (Circulation): Halothane (Red)
+  - Tile D (Disability): Sevoflurane (Yellow)
+  - Tile E (Environment/Equipment/Other): Isoflurane (Purple)
+  - Tile 5 (Obstetrics/Paeds): Desflurane (Blue)
+  - Tile 6 (Resources): Enflurane (Orange)

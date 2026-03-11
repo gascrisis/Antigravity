@@ -1,0 +1,26 @@
+# Header Emblem Design
+
+The user wants a "cool little emblem" to act as a logo in front of the `gascrisis.net` heading.
+
+## Proposed Design
+I propose a simple, clean, and recognizable medical emblem that fits the modern aesthetic of the site.
+
+**Design Concept: "The Lifeline Cross"**
+- A minimalist medical cross.
+- Inside the cross, a stylized EKG/Heartbeat line cuts horizontally across.
+- The color will be the vibrant `var(--color-ab)` bright blue matching the "crisis" text, with a glowing hover effect.
+
+## Implementation Steps
+1. **SVG Creation**: I will create this custom inline SVG.
+2. **HTML Integration**: 
+   - Insert the SVG into [index.html](file:///c:/Users/jbvan/.gemini/antigravity/scratch/gascrisis_net/index.html) inside the `.app-header` right before the `<h1>`.
+   - Insert the SVG into [crisis.html](file:///c:/Users/jbvan/.gemini/antigravity/scratch/gascrisis_net/crisis.html) inside the `.logo-link` right before the `gas` text.
+3. **CSS Styling**:
+   - Add a `.logo-emblem` class to style its size (e.g. `40px` by `40px`).
+   - Use Flexbox on the `.app-header` / `.logo-link` to vertically align the emblem with the text.
+   - Add a subtle pulse or glow animation to the emblem when hovered.
+
+## Verification
+- Refresh both [index.html](file:///c:/Users/jbvan/.gemini/antigravity/scratch/gascrisis_net/index.html) and [crisis.html](file:///c:/Users/jbvan/.gemini/antigravity/scratch/gascrisis_net/crisis.html) in the browser.
+- Ensure the emblem aligns perfectly with the text on both mobile and desktop views.
+- Ensure the hover effects trigger smoothly.

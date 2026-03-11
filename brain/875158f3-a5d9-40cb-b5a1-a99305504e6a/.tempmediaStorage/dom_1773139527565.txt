@@ -1,0 +1,32 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (43,42)<a class='MV3Tnb' href='https://about.google/?fg=1&utm_source=google-AU&utm_medium=referral&utm_campaign=hp-header'>About />
+[1] (96,42)<a class='MV3Tnb' href='https://store.google.com/AU?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-AU'>Store />
+[2] (776,40)<a aria-label='Gmail ' class='gb_Z' href='https://mail.google.com/mail/&ogbl'>Gmail />
+[3] (828,40)<a aria-label='Search for Images ' class='gb_Z' href='https://www.google.com/imghp?hl=en&ogbl'>Images />
+[4] (882,40)<a aria-label='Google apps' class='gb_B' href='https://www.google.com.au/intl/en/about/products' role='button' />
+[5] (950,40)<a aria-label='Sign in' class='gb_A' href='https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=futura_exp_og_so_72776762_e'>Sign in />
+	Sign in
+[6] (194,365)<button aria-label='Upload files or images' class='UbbAWe' />
+	[7] (194,365)<span  />
+[8] (432,365)<textarea aria-label='Search' class='gLFyf' id='APjFqb' role='combobox' title='Search' />
+[9] (665,365)<div aria-label='Search by voice' class='XDyW0e' role='button' />
+[10] (704,365)<div aria-label='Search by image' class='nDcEnd' role='button' />
+[11] (777,365)<button class='plR5qb' role='link' />
+	[12] (777,365)<div  />
+		[13] (748,365)<span  />
+		[14] (786,365)<span >AI Mode />
+[15] (426,468)<input aria-label='Google Search' class='gNO89b' role='button' />
+[16] (567,468)<input aria-label='I'm Feeling Lucky' class='RNmpXc' />
+Australia
+[17] (209,966)<a class='pHiOh' href='https://www.google.com/intl/en_au/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1'>Advertising />
+[18] (298,966)<a class='pHiOh' href='https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1'>Business />
+[19] (411,966)<a class='pHiOh' href='https://google.com/search/howsearchworks/?fg=1'>How Search works />
+[20] (660,966)<a class='pHiOh' href='https://policies.google.com/privacy?hl=en-AU&fg=1'>Privacy />
+[21] (729,966)<a class='pHiOh' href='https://policies.google.com/terms?hl=en-AU&fg=1'>Terms />
+[22] (801,966)<div class='CcNe6e' role='button' />
+	[23] (801,966)<div >Settings />
+
+</current_dom>

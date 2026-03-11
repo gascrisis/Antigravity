@@ -1,0 +1,9 @@
+# Task: Verify gascrisis.net functionality
+
+- [ ] Navigate to `file:///C:/Users/jbvan/.gemini/antigravity/scratch/gascrisis_net/index.html`
+- [ ] Dismiss disclaimer modal (click "I Agree")
+- [ ] Verify list items look like links with hover effects
+- [ ] Click on 'ANAPHYLAXIS' under 'Circulation'
+- [ ] Verify `crisis.html` loads with "Anaphylaxis" title and data checklist
+- [ ] Click 'Dashboard' to return to home page
+- [ ] Return success

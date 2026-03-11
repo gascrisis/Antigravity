@@ -1,0 +1,17 @@
+# GasCrisis.net Initial Implementation
+
+I have built the initial version of the GasCrisis.net anaesthesia crisis manual. 
+
+## What was built
+- **Responsive Grid Layout**: A 6-tile layout using modern CSS Grid that scales from mobile devices up to large desktop monitors (switching from 2 columns to 3).
+- **Premium Design Aesthetic**: 
+    - A sleek deep slate dark mode background (`#0f172a`) with subtle radial gradients for depth.
+    - Vibrant, distinct colors for each crisis category tile.
+    - Glassmorphism effects and modern typography using the Google `Inter` font.
+    - Smooth hover micro-animations (tiles lift up and glow upon hover).
+- **Interactive Modals (Removed)**: The initial grid tile modals have been replaced.
+- **Dedicated Crisis Pages (New Architecture)**: Clicking any item in the category lists now navigates to a dedicated `crisis.html` template page.
+  - **Dynamic Content Injection**: The `crisis.html` page uses Javascript to read the `?id=` from the URL, lookup the corresponding data in the `crisisData` dictionary in `script.js`, and inject it into the page.
+  - This provides a much cleaner environment for detailed checklists and flowcharts.
+- **Search Functionality**: A real-time search bar dynamically highlights matching terms in the crisis category lists.
+- **Disclaimer Gate**: A full-screen, blurred modal forces the user to acknowledge the site is for reference only upon first visit. Subsequent visits are bypassed using local storage.

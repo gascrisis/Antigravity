@@ -1,0 +1,27 @@
+# Disclaimer Gate Implementation Plan
+
+A prominent disclaimer is required before users can access the content of GasCrisis.net. This will act as a "gatekeeper" to ensure users acknowledge that the site is for reference only and not a substitute for clinical judgment.
+
+## Proposed Changes
+
+### [index.html](file:///C:/Users/jbvan/.gemini/antigravity/scratch/gascrisis_net/index.html)
+- [NEW] Add a new full-screen modal `div` with the ID `disclaimer-modal`.
+- The modal will contain the disclaimer text and a prominent "I Agree / Enter Site" button.
+
+### [styles.css](file:///C:/Users/jbvan/.gemini/antigravity/scratch/gascrisis_net/styles.css)
+- [NEW] Add styles for `#disclaimer-modal` to make it a fixed overlay (`z-index: 2000`) with a blurred background (`backdrop-filter`) that completely obscures the main content until dismissed.
+- Add styles for the disclaimer content box and the prominent "Agree" button.
+
+### [script.js](file:///C:/Users/jbvan/.gemini/antigravity/scratch/gascrisis_net/script.js)
+- [MODIFY] Add logic to check `localStorage` to see if the user has already accepted the disclaimer (so they don't see it on every single page load, but rather once per device/session, depending on preference).
+- If not accepted, display the `#disclaimer-modal`.
+- Add an event listener to the "Agree" button to hide the main modal and save the acceptance state in `localStorage`.
+
+## User Review Required
+None required right now, the implementation follows standard web practices for disclaimers. The user can adjust the exact wording of the disclaimer text after the structure is implemented.
+
+## Verification Plan
+1. **Manual Verification**: Open the website in the browser. 
+2. Verify the disclaimer pops up immediately and prevents interaction with the background.
+3. Click "Agree". Verify the modal disappears.
+4. Refresh the page. Verify the modal does *not* reappear (due to `localStorage`).

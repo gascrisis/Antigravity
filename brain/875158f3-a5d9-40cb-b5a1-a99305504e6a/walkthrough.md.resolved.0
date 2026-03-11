@@ -1,0 +1,19 @@
+# GasCrisis.net Initial Implementation
+
+I have built the initial version of the GasCrisis.net anaesthesia crisis manual. 
+
+## What was built
+- **Responsive Grid Layout**: A 6-tile layout using modern CSS Grid that scales from mobile devices up to large desktop monitors (switching from 2 columns to 3).
+- **Premium Design Aesthetic**: 
+    - A sleek deep slate dark mode background (`#0f172a`) with subtle radial gradients for depth.
+    - Vibrant, distinct colors for each crisis category tile.
+    - Glassmorphism effects and modern typography using the Google `Inter` font.
+    - Smooth hover micro-animations (tiles lift up and glow upon hover).
+- **Interactive Modals**: Clicking on any of the tiles brings up a centered, blurred-background modal containing the initial crisis management steps and differential diagnoses. 
+- **Accessibility**: Support for basic keyboard navigation is included (e.g., Tab to focus tiles, Enter to open, Escape to close modals).
+
+## Next Steps
+You can view the webpage directly by opening the HTML file in your browser:
+[C:\Users\jbvan\.gemini\antigravity\scratch\gascrisis_net\index.html](file:///C:/Users/jbvan/.gemini/antigravity/scratch/gascrisis_net/index.html)
+
+Let me know what you think of the design and colors, and if we should adjust any of the tile content, layout, or animations!

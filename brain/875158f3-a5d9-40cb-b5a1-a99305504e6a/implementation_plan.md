@@ -1,0 +1,38 @@
+# Individual Crisis Pages Plan
+
+The user wants every crisis listed on the index page to link to a separate, dedicated full page, instead of opening a small modal on the home page. These dedicated pages will provide flowchart/note-like content on crisis management.
+
+## Proposed Architecture
+Since this is a static site without a backend router, we need to create a template for the crisis pages. 
+
+We will create a `crisis.html` template. Instead of generating 30+ separate HTML files (which is hard to maintain without a build step), we can use URL parameters to dynamically load the content into a single `crisis.html` page template using JavaScript.
+
+For example, a user clicks "ANAPHYLAXIS" -> they are taken to `crisis.html?id=anaphylaxis`.
+The JavaScript on `crisis.html` reads the `id`, fetches the data from our data dictionary, and populates the title and flowchart columns.
+
+### `index.html`
+- [MODIFY] Change the `<li>` elements in the `.crisis-list` to be clickable `<a>` tags with `href` attributes pointing to `crisis.html?id=[crisis_id]`.
+- [MODIFY] Remove the existing modal HTML structure since it's no longer used.
+
+### `script.js`
+- [MODIFY] Remove the modal opening/closing logic.
+- [MODIFY] Expand the `crisisData` object to contain all the new crises listed on the homepage, serving as our "database".
+- [NEW] Add logic that runs only on `crisis.html` to parse the `?id=` from the URL, lookup the data in `crisisData`, and inject it into the DOM.
+
+### `crisis.html` (New File)
+- [NEW] Create this file. It will have the same global header (with the search bar and disclaimer logic), but the main `<main>` area will be a clean layout designed for flowcharts and step-by-step management notes.
+- [NEW] It will include a "Back to Dashboard" button.
+
+### `styles.css`
+- [MODIFY] Remove modal styles.
+- [NEW] Add styles specific to the `crisis.html` layout (e.g., `.crisis-container`, `.flowchart-step`, `.note-box`).
+
+## User Review Required
+> [!IMPORTANT]
+> Because there are over 30 unique crises, I will set up the *framework* (the routing, the `crisis.html` template, and populate a few examples like Anaphylaxis and Cardiac Arrest). Do you want me to generate placeholder content for *all 30+* crises, or just build the system so you can fill in the clinical data yourself?
+
+## Verification Plan
+1. Click a crisis link on the home page.
+2. Verify the browser navigates to `crisis.html` and the URL updates with the correct ID.
+3. Verify the page displays the correct title and content for that specific crisis.
+4. Verify the "Back" button returns to the home page.
